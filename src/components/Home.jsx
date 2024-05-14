@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 const [data,setData] = useState([])
      useEffect (() => {
-        axios.get('/users')
+        axios.get('http://localhost:5173/users')
         .then(res => setData(res.data.users))
         .catch(error => console.error(error));
      },[])
@@ -15,7 +15,7 @@ const [data,setData] = useState([])
         const confirm =window.confirm(" Would You like to Delete ?"+id);
         if(confirm)
             {
-                axios.delete('/users/'+id)
+                axios.delete('http://localhost:5173/users/'+id)
                 .then(res => {
                    location.reload();
                 }).catch(err => console.log(err));
