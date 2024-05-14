@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 function Home() {
 const [data,setData] = useState([])
      useEffect (() => {
-        axios.get('http://localhost:3000/users')
-        .then(res => setData(res.data))
+        axios.get('/users')
+        .then(res => setData(res.data.users))
         .catch(error => console.error(error));
      },[])
 
