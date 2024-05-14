@@ -8,7 +8,7 @@ function Read() {
 
     const {id} = useParams();
      useEffect (() => {
-        axios.get('http://localhost:3000/users/' + id)
+        axios.get('/users/' + id)
         .then(res => setData(res.data.users))
         .catch(error => console.error(error));
      },[])
