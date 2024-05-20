@@ -14,7 +14,7 @@ function Create() {
     const navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('https://jsonplaceholder.typicode.com/users' , values)
+        axios.post('https://jsonplaceholder.typicode.com/users/' , values)
         .then(res => {
             console.log(res);
             navigate('/')
