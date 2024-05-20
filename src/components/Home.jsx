@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 const [data,setData] = useState([])
      useEffect (() => {
-        axios.get('http://localhost:5173/users')
+        axios.get('https://jsonplaceholder.typicode.com/users')
         .then(res => setData(res.data.users))
         .catch(error => console.error(error));
      },[])
