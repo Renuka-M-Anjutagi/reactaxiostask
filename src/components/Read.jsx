@@ -11,7 +11,7 @@ function Read() {
         axios.get('https://jsonplaceholder.typicode.com/users/' + id)
         .then(res => setData(res.data))
         .catch(error => console.error(error));
-     },[id])
+     },[])
   return (
     <div  className='d-flex w-100 vh-100 flex-column justify-content-center align-items-center bg-light '>
 
