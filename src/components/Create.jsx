@@ -9,6 +9,7 @@ function Create() {
         username:'',
         email:'',
         phone:'',
+        company:''
 
     })
     const navigate = useNavigate();
