@@ -9,7 +9,7 @@ const [data,setData] = useState([])
         axios.get('https://jsonplaceholder.typicode.com/users/')
         .then(res => setData(res.data))
         .catch(error => console.error(error));
-     },[])
+     },[]);
 
      const handleDelete = (id) => {
         const confirm =window.confirm(" Would You like to Delete ?"+id);
