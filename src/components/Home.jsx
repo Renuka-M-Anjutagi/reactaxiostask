@@ -15,7 +15,7 @@ const [data,setData] = useState([])
         const confirm =window.confirm(" Would You like to Delete ?"+id);
         if(confirm)
             {
-                axios.delete('http://localhost:5173/users/'+id)
+                axios.delete('https://jsonplaceholder.typicode.com/users/'+id)
                 .then(res => {
                    location.reload();
                 }).catch(err => console.log(err));
