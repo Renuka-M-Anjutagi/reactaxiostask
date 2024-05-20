@@ -9,7 +9,7 @@ function Update() {
 
     const {id} = useParams();
      useEffect (() => {
-        axios.get('http://localhost:3000/users/' + id)
+        axios.get('https://jsonplaceholder.typicode.com/users/' + id)
         .then(res => setValues(res.data))
         .catch(error => console.error(error));
      },[])
@@ -24,7 +24,7 @@ function Update() {
     const navigate = useNavigate();
     const handleUpdate = (event) => {
         event.preventDefault();
-        axios.put('http://localhost:3000/users/'+id , values)
+        axios.put('https://jsonplaceholder.typicode.com/users/'+id , values)
         .then(res => {
             console.log(res);
             navigate('/')
