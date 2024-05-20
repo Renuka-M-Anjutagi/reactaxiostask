@@ -9,7 +9,7 @@ function Read() {
     const {id} = useParams();
      useEffect (() => {
         axios.get('https://jsonplaceholder.typicode.com/users/' + id)
-        .then(res => setData(res.data))
+        .then(res => setData(res.data.read))
         .catch(error => console.error(error));
      },[id])
   return (
