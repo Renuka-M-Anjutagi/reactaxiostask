@@ -57,8 +57,8 @@ const [data,setData] = useState([])
                        
                         <td>{d.company[0]}</td>
                         <td>
-                        <Link to={`/read/${d.id}`} className='btn btn-sm btn-info me-2' >Read</Link>
-                        <Link to={`/update/${d.id}`} className='btn btn-sm btn-primary me-2'> Edit </Link>
+                        <Link to={`/${d.id}`} className='btn btn-sm btn-info me-2' >Read</Link>
+                        <Link to={`/${d.id}`} className='btn btn-sm btn-primary me-2'> Edit </Link>
                             <button onClick={e => handleDelete(d.id)} className='btn btn-sm btn-danger me-2' >Delete</button>
                         </td>
                     </tr>
