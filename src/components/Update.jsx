@@ -19,6 +19,7 @@ function Update() {
         username:'',
         email:'',
         phone:'',
+       company:'',
 
     })
     const navigate = useNavigate();
